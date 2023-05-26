@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./ressources/css/reset.css" />
+    <link rel="stylesheet" href="./ressources/css/style.css" />
+    <title>Fake News</title>
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- Navbar -->
+    <div class="hidden-menu" id="website-wrapper">
+      <div class="top-container">
+        <div class="menu-container">
+          <nav class="navbar">
+            <ul class="menu" id="main-menu">
+              <!-- First Link -->
+              <li class="first-layer-li">
+                <a href="#">
+                  <div class="icon-container-menu">
+                    <i
+                      class="fa-solid fa-chart-pie social-icon-menu"
+                      style="color: #e5e5e5"
+                    ></i>
+                  </div>
+                  <div>rembobiner</div>
+                </a>
+              </li>
+
+              <!-- Second Link -->
+              <li class="parent-link first-layer-li">
+                <a href="">
+                  <div class="icon-container-menu">
+                    <i
+                      class="fa-solid fa-chart-column social-icon-menu"
+                      style="color: #e5e5e5"
+                    ></i>
+                  </div>
+                  <div>truc en troc</div>
+                </a>
+
+                <!-- Submenu - Layer 1 -->
+                <ul>
+                  <li class="simple-link">
+                    <a href="#" class="padding-l">faux</a>
+                  </li>
+                  <li class="simple-link">
+                    <a href="#" class="padding-l">contre-verites</a>
+                  </li>
+                  <li class="simple-link">
+                    <a href="#" class="padding-l">erreurs</a>
+                  </li>
+                  <li class="simple-link parent-link-2">
+                    <a href="#" class="padding-l">falsification</a>
+
+                    <!-- Submenu- Layer - 2 -->
+                    <ul>
+                      <li class="simple-link-2">
+                        <a href="#" class="padding-xl">faux liens</a>
+                      </li>
+                      <li class="simple-link-2">
+                        <a href="#" class="padding-xl">fausses tabulations</a>
+                      </li>
+                      <li class="simple-link-2">
+                        <a href="#" class="padding-xl no-border">faux titre</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="simple-link">
+                    <a href="#" class="padding-l no-border">non</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Third Link -->
+              <li class="first-layer-li">
+                <a href="#">
+                  <div class="icon-container-menu">
+                    <i
+                      class="fa-solid fa-image social-icon-menu"
+                      style="color: #e5e5e5"
+                    ></i>
+                  </div>
+                  <div>rouages</div>
+                </a>
+              </li>
+
+              <!-- Fourth Link -->
+              <li class="first-layer-li">
+                <a href="">
+                  <div class="icon-container-menu">
+                    <i
+                      class="fa-solid fa-truck-fast social-icon-menu"
+                      style="color: #e5e5e5"
+                    ></i>
+                  </div>
+                  <div>boucle infinie</div>
+                </a>
+              </li>
+
+              <!-- Fifth Link -->
+              <li class="last-li first-layer-li">
+                <a href="#">
+                  <div class="icon-container-menu">
+                    <i
+                      class="fa-solid fa-wand-magic-sparkles social-icon-menu"
+                      style="color: #e5e5e5"
+                    ></i>
+                  </div>
+                  <div>fausse route</div>
+                </a>
+              </li>
+
+              <!-- End of UL .menu -->
+            </ul>
+            <button type="button" class="menu-icon closed" id="menu-icon">
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+            </button>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header>
+        <h1>FAKE NEWS</h1>
+        <p>contient de l'authentique html5 et la véritable css3.</p>
+      </header>
+      <div class="separator-container">
+        <div class="line-separator"></div>
+        <div class="line-separator"></div>
+      </div>
+      <main>
+        <section class="section section-1">
+          <h2>les dernières <span class="text-bold">fake news</span>!</h2>
+          <!-- article 1 -->
+          <div class="section-1-flex-container">
+            <article>
+              <img
+                class="img-section-1"
+                src="./ressources/images/pic01.jpg"
+                alt="image-of-books"
+              />
+              <h3>comment ranger un livre?</h3>
+              <p>
+                On vous ment <span class="text-bold">depuis le début</span>, il
+                faut ranger les livres sur la tranche, c'set meilleur pour leur
+                santé mentale. Le témoignage exclusif de
+                <a
+                  class="underline"
+                  href="https://www.google.com/search?q=dictionnaire+de+francais&oq=dictionnaire+de+francais&aqs=chrome..69i57j0i512l3j0i22i30l6.7382j0j7&sourceid=chrome&ie=UTF-8"
+                  target="_blank"
+                  >Robert, dictionnaire de francais.</a
+                >
+              </p>
+            </article>
+            <!-- end of article 1 -->
+            <!-- article 2 -->
+            <article>
+              <img
+                class="img-section-1"
+                src="./ressources/images/pic02.jpg"
+                alt="image-of-bread-with-chocolate-paste"
+              />
+              <h3>huile de palmipède</h3>
+              <p>
+                Des chercheurs ont découvert qu'à cause de l'huile de palme
+                quelle contient, une consommation excessive de pâte à tartiner
+                provoquerait une mutation du pied enpâte de canard.
+                <a
+                  class="underline"
+                  href="https://www.google.com/search?q=les+photo+exclusives&sxsrf=APwXEddWSlgyyioBvmQQ8UR5CXPdGB9r7w%3A1684742222105&ei=TiBrZNeOBpqTgQbpkragCg&ved=0ahUKEwjX7b7tuYj_AhWaScAKHWmJDaQQ4dUDCA8&uact=5&oq=les+photo+exclusives&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAE6CAgAEKIEELADSgQIQRgBUMAHWMIJYIILaAFwAHgAgAGKAYgB4wKSAQMwLjOYAQCgAQHIAQPAAQE&sclient=gws-wiz-serp"
+                  target="_blank"
+                  >Les photos exclusives ici!</a
+                >
+              </p>
+            </article>
+            <!-- end of article 2 -->
+            <!-- article 3 -->
+            <article>
+              <img
+                class="img-section-1"
+                src="./ressources/images/pic03.jpg"
+                alt="image-of-cherry-tree-in-blossom"
+              />
+              <h3>cérisier alien</h3>
+              <p>
+                <span class="text-bold">EXCLUSIF !</span> les aliens sont parmi
+                nous! Ils se cachent dans les cerisiers déguisés en fleurs.
+                L'interview exclusive de
+                <a
+                  class="underline"
+                  href="https://www.google.com/search?q=extraterrestre&sxsrf=APwXEdcbXmHzOZglYc2fKyloGWdin0VLHw%3A1684742757252&ei=ZSJrZOCHD_G78gLi9ZjACQ&ved=0ahUKEwigztXsu4j_AhXxnVwKHeI6BpgQ4dUDCA8&uact=5&oq=extraterrestre&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIECCMQJzIFCC4QgAQyBQguEIAEMgUIABCABDIFCC4QgAQyBQguEIAEMgsIABCABBCxAxDHAzIKCC4QigUQxwMQQzIFCAAQgAQ6CggAEEcQ1gQQsANKBAhBGABQzAFYzAFgwwVoAXABeACAAVyIAVySAQExmAEAoAEByAEGwAEB&sclient=gws-wiz-serp"
+                  target="_blank"
+                  >Bob l'extraterrestre.</a
+                >
+              </p>
+            </article>
+          </div>
+          <!-- end of article 3 -->
+          <button class="btn">
+            <i class="fa-solid fa-file" style="color: #f5bab4"></i>J'EN VEUX
+            ENCORE !
+          </button>
+        </section>
+
+        <!-- Banner Section -->
+        <section class="section-banner">
+          <p>
+            "on peut tromper <span class="text-bold">une</span> fois
+            <span class="text-bold">mille</span> personnes, mais on ne peut pas
+            tromper <span class="text-bold">mille</span> fois
+            <span class="text-bold">une</span> personne." -
+            <span class="text-italics">émile</span>
+          </p>
+        </section>
+
+        <!-- Section 2 -->
+        <div class="flex-container">
+          <div class="left-part">
+            <section class="section section-2">
+              <!-- article 1 -->
+              <article class="article-1">
+                <h2>c'est encore un coup de la cia!</h2>
+                <img
+                  class="image-section-2"
+                  src="./ressources/images/pic04.jpg"
+                  alt="image-of-a-notebook"
+                />
+                <h3>des faux passeport pour les aliens</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Saepe ullam dolore, fugit provident quibusdam consectetur
+                  necessitatibus expedita sapiente harum suscipit ipsa pariatur
+                  dicta aliquam non rerum. Obcaecati laudantium corporis
+                  corrupti, in nobis nostrum aperiam doloribus pariatur dolore
+                  odio, cumque inventore veniam provident. Doloribus veritatis
+                  tempore necessitatibus, maiores qui labore, facere consectetur
+                  velit porro sint ut. Vitae amet corrupti quia molestias iste?
+                  Doloribus veritatis tempore necessitatibus, maiores qui
+                  labore, facere consectetur velit porro sint ut. Vitae amet
+                  corrupti quia molestias iste? Esse, nisi voluptatibus in
+                  veritatis enim ullam porro sequi ratione et
+                  <span class="text-bold">Nostrum Perferendis Alias</span> nemo
+                  dignissimos consequuntur cum iure?
+                </p>
+                <button class="btn">
+                  <i class="fa-solid fa-file" style="color: #f5bab4"></i>J'EN
+                  VEUX TOUT SAVOIR
+                </button>
+              </article>
+              <!-- end of article 1 -->
+              <div class="line-separator"></div>
+              <div class="line-separator"></div>
+              <!-- article 2 -->
+              <article class="article-2">
+                <h2>a moins que ce ne soit la spa ?</h2>
+                <img
+                  class="image-section-2"
+                  src="./ressources/images/pic05.jpg"
+                  alt="image-of-a-notebook"
+                />
+                <h3>des faux passeport pour les aliens</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi quod dolore laboriosam ab eaque officiis placeat
+                  similique in dolorum eos ut itaque, enim blanditiis possimus
+                  aliquam fugit cumque velit quia earum? Recusandae quisquam
+                  atque ab quia delectus temporibus architecto consequatur iure?
+                  Reprehenderit fuga quod nesciunt, incidunt, mollitia
+                  perferendis quo quos dolorem ipsa cum quidem architecto
+                  aliquam nihil possimus, hic ducimus totam eius fugiat vel
+                  quibusdam accusamus! Qui, hic consequuntur
+                  <span class="text-bold">un IPHONE</span>!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+                  saepe delectus dignissimos accusamus, ab sequi maxime!
+                  Voluptatibus sint suscipit consectetur dicta voluptatum
+                  molestias laudantium velit ut laborum nemo! Aliquid, soluta
+                  molestiae. Pariatur facilis laborum quibusdam officia cum
+                  voluptas inventore modi perspiciatis nemo similique quam,
+                  assumenda nostrum sit? Recusandae, commodi provident!
+                </p>
+                <button class="btn">
+                  <i class="fa-solid fa-file" style="color: #f5bab4"></i
+                  >J'ADOPTE UN ALIEN
+                </button>
+              </article>
+              <!-- end of article 2 -->
+            </section>
+          </div>
+          <!-- Section 3 -->
+          <div class="right-part">
+            <section class="section section-3">
+              <!-- article 1 -->
+              <article>
+                <span class="gray-span">30 juillet</span>
+                <h3>post à souder</h3>
+                <p>
+                  L'actualité brûlante du jour. Vous rester collés à vos sièges.
+                </p>
+                <div class="line-separator"></div>
+              </article>
+              <!-- end of article 1 -->
+              <!-- article 2 -->
+              <article>
+                <span class="gray-span">28 juillet</span>
+                <h3>post de polices</h3>
+                <p>
+                  Hé là! Qui va là? Veuillez présenter les documents afférents à
+                  la conduite de votre véhicule.
+                </p>
+                <div class="line-separator"></div>
+              </article>
+              <!-- end of article 2 -->
+              <!-- article 3 -->
+              <article>
+                <span class="gray-span">2 juillet</span>
+                <h3>post apocalyptique</h3>
+                <p>
+                  ! Lorem ipsum dolor sit, amet consectetur adipisicing amet
+                  elit. Quidem, illumS
+                </p>
+              </article>
+              <!-- end of article 3 -->
+            </section>
+            <div class="line-separator"></div>
+            <div class="line-separator"></div>
+
+            <!-- Section 4 -->
+            <section class="section section-4">
+              <!-- article 1 -->
+              <article>
+                <h4>offre geofitness</h4>
+                <div class="section-4-container">
+                  <img
+                    class="image-section-4"
+                    src="./ressources/images/pic06.jpg"
+                    alt="image-of-a-globe"
+                  />
+                  <p>
+                    Incroyable! Grâce à GeoFitness, j'apprends la géographi tout
+                    en faisant de l'exercice! <br />
+                    Seulement 34999,99&euro;! <br />
+                    Le 1er acheté, le 2ème à <span class="text-bold">+500%</span
+                    ><br />
+                    Offre exclusive réservée au 2 premiers pigeons!
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+                <button class="btn">
+                  <i class="fa-solid fa-file" style="color: #f5bab4"></i>JE SUIS
+                  UN PIGEON !
+                </button>
+              </article>
+              <!-- end of article 1 -->
+              <div class="line-separator"></div>
+              <!-- article 2 -->
+              <article>
+                <h4>la plante vampire</h4>
+                <div class="section-4-container">
+                  <img
+                    class="image-section-4"
+                    src="./ressources/images/pic07.jpg"
+                    alt="image-of-a-plante"
+                  />
+                  <p>
+                    Incroyable! Si vous touchez ses feuilles, cette plante vous
+                    videra de votre sang en un clin d'oeil.<br />
+                    Le cadeau empoisonné idéal!
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+                <button class="btn">
+                  <i class="fa-solid fa-file" style="color: #f5bab4"></i>MAMAN
+                  J'AI PEUR !
+                </button>
+              </article>
+              <!-- end of article 2 -->
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-container">
+          <h2>des question ? <span class="text-bold">contactez-nous:</span></h2>
+          <div class="footer-flex-container">
+            <div class="contact-section">
+              <form action="POST" id="the-form" novalidate>
+                <div class="input-container">
+                  <input type="text" id="name" class="name" placeholder="Nom" />
+                  <input
+                    type="text"
+                    id="email"
+                    class="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <button type="submit" class="btn">
+                  <i class="fa-solid fa-envelope" style="color: #f5bab4"></i>IL
+                  VA FAIRE TOT NOIR !
+                </button>
+              </form>
+            </div>
+            <div class="social-media-section">
+              <p>Nous vous répondons exclusivement par pigeon voyageur.</p>
+              <div class="flex-footer-container">
+                <div class="mini-footer-flex-container">
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-solid fa-house social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <address>
+                      1234 Ch. de la perdition <br />
+                      457R6 Quelque-Part<br />
+                      Jupiter
+                    </address>
+                  </div>
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-solid fa-phone fa-rotate-270 social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <p>(0_O) \0... \0/...0/ (T_T)</p>
+                  </div>
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-solid fa-envelope social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <!-- <p> -->
+                    <a href="#" class="underline"
+                      >ne-pas-repondre@fake-news.info</a
+                    >
+                    <!-- </p> -->
+                  </div>
+                </div>
+                <div class="mini-footer-flex-container">
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-brands fa-twitter social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <!-- <p> -->
+                    <a href="#" class="underline">@Fakenews</a>
+                    <!-- </p> -->
+                  </div>
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-brands fa-instagram social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <!-- <p> -->
+                    <a href="#" class="underline">instagram.com/fake-news</a>
+                    <!-- </p> -->
+                  </div>
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-brands fa-dribbble social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <!-- <p> -->
+                    <a href="#" class="underline">dribbble.com/fake-news</a>
+                    <!-- </p> -->
+                  </div>
+                  <div class="social-media-conatiner">
+                    <div class="icon-container">
+                      <i
+                        class="fa-brands fa-facebook-f social-icon"
+                        style="color: #e5e5e5"
+                      ></i>
+                    </div>
+                    <!-- <p> -->
+                    <a href="#" class="underline">facebook.com/fake-news</a>
+                    <!-- </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line-separator"></div>
+          <div class="footer-bottom">
+            <p>&copy Fake News. Tous droit résérvés.</p>
+            <span class="footer-separator">|</span>
+            <a href="#" class="underline">Mentions légales</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

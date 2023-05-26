@@ -1,0 +1,939 @@
+/* Universal Styles */
+/* _______________________________________________________________________________________________ */
+/* Separators  */
+.separator-container {
+  max-width: 1180px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-separator {
+  height: 2px;
+  margin-bottom: 0.5rem;
+  background-color: var(--gray-1);
+  width: 100%;
+}
+/* End of Separators  */
+
+/* Text Bold */
+.text-bold {
+  font-weight: 700;
+  color: var(--gray-4);
+}
+
+/* Underline for href */
+.underline {
+  text-decoration: underline;
+  cursor: var(--cursor);
+}
+
+.underline:hover {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+/* Classic button */
+.btn {
+  background: var(--orange);
+  border: none;
+  color: var(--white);
+  cursor: var(--cursor);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: var(--letter-spacing-s);
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  /* padding: 0.75rem 1.25rem; */
+  border-radius: var(--border-radius);
+  display: block;
+  width: 100%;
+  box-shadow: var(--light-shadow);
+}
+
+.btn:hover {
+  background: var(--orange-hover);
+}
+
+.fa-file {
+  margin-right: 0.5rem;
+}
+
+.fa-envelope {
+  margin-right: 0.5rem;
+}
+
+/* Italics */
+.text-italics {
+  font-style: italic;
+}
+
+/* Section */
+.section,
+.footer-container {
+  max-width: 1180px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* _______________________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________________ */
+/* Header */
+header {
+  /* height: 50vh; */
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  color: var(--orange);
+  letter-spacing: var(--letter-spacing-xl);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+header p {
+  text-transform: uppercase;
+  color: var(--gray-2);
+  margin-top: 1.5rem;
+  letter-spacing: var(--letter-spacing-m);
+  line-height: var(--line-height);
+  text-align: center;
+}
+/* End of Header */
+/* __________________________________________________________________________ */
+
+/* __________________________________________________________________________ */
+/* Navbar */
+.top-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: var(--cursor);
+  display: block;
+}
+
+.hamburger {
+  height: 2px;
+  background: var(--gray-3);
+  width: 20px;
+  margin-bottom: 3px;
+}
+
+.menu {
+  background-color: var(--bg-dark);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-s);
+  width: 250px;
+  display: none;
+  position: absolute;
+  left: -250px;
+  height: 100vh;
+}
+
+.website-wrapper {
+  transform: translateX(250px);
+}
+
+.menu a {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  border-bottom: 1px solid var(--gray-5);
+}
+
+.menu a:hover {
+  color: var(--orange-hover);
+}
+
+.menu .padding-l {
+  padding-left: 1.75rem;
+  color: var(--gray-1);
+}
+
+.menu .padding-xl {
+  padding-left: 2.75rem;
+  color: var(--gray-1);
+}
+
+.menu .simple-link,
+.menu .simple-link-2 {
+  font-weight: 400;
+}
+
+.menu .last-li a {
+  border-bottom: none;
+}
+
+.last-li {
+  padding-bottom: 100px;
+}
+
+.opened-menu {
+  display: block;
+}
+
+.closed {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+/* First layer */
+
+.menu .simple-link {
+  display: none;
+}
+
+.menu .parent-link:hover .simple-link {
+  display: block;
+}
+
+/* Second layer */
+.menu .simple-link-2 {
+  display: none;
+}
+
+.menu .parent-link-2:hover .simple-link-2 {
+  display: block;
+}
+
+.menu .icon-container-menu {
+  display: none;
+}
+
+.triangle {
+  display: none;
+}
+
+.pseudo-element:before {
+  display: none;
+}
+
+/* End of Navbar */
+/* __________________________________________________________________________ */
+
+/* __________________________________________________________________________ */
+/* MEDIA QUERIES FOR NAVBAR 992px++ */
+@media (min-width: 992px) {
+  /* __________________________________________________________________________ */
+  /* Navbar */
+  .hidden-menu {
+    transform: translateX(0px);
+  }
+
+  .menu .first-layer-li a {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .menu-container {
+    max-width: 1180px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar {
+    margin-top: 1rem;
+  }
+
+  .menu {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-4);
+    width: 100%;
+    left: 0;
+    height: auto;
+  }
+
+  .menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu .icon-container-menu {
+    display: block;
+    background: var(--gray-3);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: var(--dark-shadow);
+  }
+
+  .menu .social-icon-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+  }
+
+  .menu a {
+    border-bottom: none;
+  }
+
+  .menu a:hover {
+    color: var(--orange-hover);
+  }
+
+  .menu a:hover .icon-container-menu {
+    background: var(--orange-hover);
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .last-li {
+    padding-bottom: 0;
+  }
+
+  .menu .parent-link {
+    position: relative;
+  }
+
+  .menu .parent-link:hover .simple-link {
+    display: block;
+    text-transform: capitalize;
+  }
+
+  .menu .parent-link:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    background-color: var(--white);
+    border: solid 2px var(--gray-1);
+    border-radius: var(--border-radius);
+  }
+
+  .menu ul a:hover {
+    color: var(--orange-hover);
+  }
+
+  .menu .padding-l {
+    color: var(--gray-4);
+    border-bottom: 1px solid var(--gray-1);
+  }
+
+  .menu ul .no-border {
+    border-bottom: none;
+  }
+
+  a.padding-l {
+    width: 100%;
+    margin-right: 5rem;
+  }
+
+  .menu .padding-l:hover {
+    color: var(--orange-hover);
+  }
+
+  /* Second layer of the menu */
+  .menu .parent-link-2 {
+    position: relative;
+  }
+
+  .menu .simple-link-2 {
+    display: none;
+  }
+
+  .menu .parent-link-2:hover .simple-link-2 {
+    display: block;
+    text-transform: capitalize;
+  }
+
+  .menu .parent-link-2:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1.5rem;
+    left: 11.9rem;
+    background-color: var(--white);
+    border: solid 2px var(--gray-1);
+    border-radius: var(--border-radius);
+  }
+  a.padding-xl {
+    width: 100%;
+    margin-right: 6rem;
+  }
+
+  .menu .padding-xl {
+    padding-left: 1.25rem;
+    color: var(--gray-4);
+    border-bottom: 1px solid var(--gray-1);
+  }
+
+  /* Triangle for the menu */
+
+  .menu .parent-link:hover .triangle {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid var(--gray-1);
+    margin-top: 3rem;
+    margin-left: 0rem;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .menu .parent-link:hover .pseudo-element:before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid var(--white);
+    margin-top: -0.75rem;
+    margin-left: 2.25rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+/* End of Navbar */
+/* __________________________________________________________________________ */
+
+/* __________________________________________________________________________ */
+/* Section 1 */
+h2 {
+  text-transform: uppercase;
+  color: var(--gray-2);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.img-section-1 {
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.25rem solid var(--gray-1);
+  width: 100%;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: var(--gray-4);
+  letter-spacing: var(--letter-spacing-s);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-1 p {
+  margin-bottom: 1.25rem;
+  line-height: var(--line-height);
+}
+/* End of Section 1 */
+/* __________________________________________________________________________ */
+
+/* __________________________________________________________________________ */
+/* Section Banner */
+.section-banner {
+  margin-top: 4rem;
+  background-image: url("../images/banner.jpg");
+  object-fit: cover;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-top: 0.5rem solid var(--gray-1);
+  border-bottom: 0.5rem solid var(--gray-1);
+}
+
+.section-banner p {
+  color: var(--white);
+  font-size: 1.75rem;
+  letter-spacing: var(--letter-spacing-m);
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 1180px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-banner p .text-bold {
+  color: var(--white);
+}
+/* End of section Banner */
+/* __________________________________________________________________________ */
+
+/* __________________________________________________________________________ */
+/* Section 2 */
+.image-section-2 {
+  border: 0.25rem solid var(--gray-1);
+  width: 100%;
+}
+
+.section-2 p {
+  line-height: var(--line-height);
+  margin-bottom: 1.25rem;
+}
+
+.section-2 .btn {
+  margin-top: 2.5rem;
+}
+
+.section-2 .article-1 {
+  margin-bottom: 2.5rem;
+}
+
+.section-2 .article-2 {
+  margin-top: 2.5rem;
+}
+/* End of Section 2 */
+/* __________________________________________________________________________ */
+
+/* __________________________________________________________________________ */
+/* Section 3 */
+.gray-span {
+  background: var(--gray-2);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-m);
+  padding: 0.5rem 1.25rem;
+}
+
+.section-3 article:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+.section-3 p {
+  margin-bottom: 2.5rem;
+}
+/* End of section 3 */
+
+/* Section 4 */
+h4 {
+  text-transform: uppercase;
+  color: var(--gray-2);
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  letter-spacing: var(--letter-spacing-m);
+  font-weight: 700;
+}
+
+.section-4 article:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+.section-4 article:first-child {
+  margin-bottom: 2.5rem;
+}
+.section-4 article:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.image-section-4 {
+  border: 0.25rem solid var(--gray-1);
+  float: left;
+  margin-right: 1.5rem;
+  clear: left;
+}
+
+.section-4 p {
+  line-height: var(--line-height);
+  text-align: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.section-4 .btn {
+  margin-top: 2rem;
+}
+/* End of section 4 */
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* FORM */
+.error {
+  margin-top: -0.5rem;
+  text-align: left;
+  margin-bottom: 0.75rem;
+  color: var(--orange);
+  font-size: 0.75rem;
+}
+
+.hidden {
+  display: none;
+}
+
+form input,
+textarea {
+  border: solid 2px var(--gray-1);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  display: block;
+}
+
+.input-container input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+form textarea {
+  margin-top: 0.75rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.input-width-fix {
+  width: 100%;
+}
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* Footer */
+footer {
+  background: var(--bg-gray);
+}
+
+.social-media-section {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 5rem;
+}
+
+.social-media-section p {
+  text-align: left;
+}
+
+.social-media-conatiner {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-container {
+  background: var(--gray-4);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: var(--dark-shadow);
+}
+
+.mini-footer-flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.social-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-bottom p {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  padding-bottom: 3rem;
+}
+
+.footer-separator {
+  display: none;
+}
+
+footer address {
+  font-style: normal;
+  text-align: left;
+}
+/* _______________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* MEDIA QUIRIES 768px++*/
+@media (min-width: 768px) {
+  /* Button style */
+  .btn {
+    padding: 0.75rem 1rem;
+    width: auto;
+  }
+
+  /* __________________________________________________________________________ */
+  /* Section 1 */
+  .section-1 .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-1 p,
+  .section-1 h3 {
+    text-align: center;
+  }
+
+  .section-1-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+  .section-1-flex-container article {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33% - 2rem);
+  }
+  /* End of section 1 */
+  /* __________________________________________________________________________ */
+
+  /* __________________________________________________________________________ */
+  /* Section-banner */
+  .section-banner {
+    margin-top: 6rem;
+  }
+  /* End of section banner */
+  /* __________________________________________________________________________ */
+
+  /* __________________________________________________________________________ */
+  /* Section 2-4 */
+  .section-2 p {
+    text-align: left;
+  }
+
+  .section-2 h2,
+  .section-2 h3,
+  .section-4 h4 {
+    text-align: left;
+  }
+
+  .section {
+    text-align: left;
+  }
+
+  .flex-container {
+    display: flex;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+    /* To verify again the paddings */
+    padding-right: 2.5rem;
+  }
+
+  .image-section-4 {
+    float: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-4 article .btn {
+    text-align: left;
+  }
+  /* End of section 2-4 */
+  /* __________________________________________________________________________ */
+
+  /* __________________________________________________________________________ */
+  /* Footer */
+  .footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  .contact-section,
+  .social-media-section {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 0.5rem);
+  }
+
+  .icon-container {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-media-section {
+    padding-top: 0;
+    font-size: 0.75rem;
+  }
+
+  .flex-footer-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .mini-footer-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .footer-container a {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 0;
+  }
+
+  .footer-separator {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  /* End of footer */
+  /* __________________________________________________________________________ */
+
+  /* __________________________________________________________________________ */
+  /* FORM */
+  .input-container {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+
+  .input-container input {
+    margin-bottom: 0;
+  }
+
+  .error {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  form textarea {
+    margin-top: 0;
+  }
+
+  #the-error-message {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  /* End of Form */
+  /* _______________________________________________________________________________ */
+}
+
+/* _______________________________________________________________________________ */
+/* MEDIA 992px ++ */
+@media (min-width: 992px) {
+  .social-media-section {
+    font-size: 1rem;
+  }
+
+  .icon-container {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-flex-container {
+    gap: 1.5rem;
+  }
+}
+/* _______________________________________________________________________________ */
+
+/* _______________________________________________________________________________________ */
+/* MODAL */
+.modal-hidden {
+  display: none !important;
+}
+
+.modal-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* _______________________________________________________________________________________ */
+/* MODAL */
+.modal-hidden {
+  display: none !important;
+}
+
+.modal {
+  background: var(--bg-light);
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  border: 5px solid var(--gray-1);
+  padding: 3rem;
+}
+
+.modal-body {
+  margin-bottom: 1rem;
+}
+/* End of Modal */
+/* _______________________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________________ */
+/* MEDIA QUERIES FOR MODAL WINDOW */
+@media (min-width: 768px) {
+  .modal {
+    width: 500px;
+  }
+
+  .modal .btn {
+    width: 100%;
+  }
+}
+/* _______________________________________________________________________________________ */
